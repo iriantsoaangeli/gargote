@@ -22,3 +22,6 @@
 - CATEGORIE : **id** , nom 
 - COMMANDE : **id**, dateCommande , montant (nouveau)
 - COMMANDEPLAT: **id** , #idCommande , #idPlat , qte (nouveau)
+
+#### Ou mettre la quantite ?
+- Dans la table de liason pour savoir si quel quantite est liee a la commande
