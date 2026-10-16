@@ -16,3 +16,6 @@ CREATE TABLE commandePlat (
 -- Set les FOREIGN key
 ALTER TABLE commandePlat ADD CONSTRAINT fk_commande FOREIGN KEY (idCommande) REFERENCES commande(id);
 ALTER TABLE commandePlat ADD CONSTRAINT fk_plat FOREIGN KEY (idPlat) REFERENCES carte(id);
+
+-- Contrainte sur la quantité
+ALTER TABLE commandePlat ADD CONSTRAINT qte_positive CHECK (qte > 0);   
