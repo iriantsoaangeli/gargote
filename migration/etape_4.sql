@@ -1,6 +1,6 @@
 -- La table client
 CREATE TABLE client(
     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-    nom VARCHAR(50) NOT NULL,
+    nom VARCHAR(50) NOT NULL
 );
 
