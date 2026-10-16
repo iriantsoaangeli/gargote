@@ -9,3 +9,6 @@ INSERT INTO client(nom) values('Client de passage')
 
 -- Ajouter la colonne clien aux commandes 
 ALTER TABLE commande ADD COLUMN idClient INT NOT NULL DEFAULT 1 ;
+
+-- AJouter contrainte sur foreign key
+ALTER TABLE commande ADD CONSTRAINT fk_client FOREIGN KEY (idClient) REFERENCES client (id);
