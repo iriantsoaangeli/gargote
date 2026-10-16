@@ -6,3 +6,12 @@ ALTER TABLE CARTE ADD COLUMN idCategorie INT;
     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     nom VARCHAR(50)
  );
+
+-- Donnees de categories
+
+INSERT INTO categorie (nom) VALUES ('PLats Malagasy');
+INSERT INTO categorie (nom) VALUES ('plats chinois');
+INSERT INTO categorie (nom) VALUES ('soupes');
+INSERT INTO categorie (nom) VALUES ('desserts');
+INSERT INTO categorie (nom) VALUES ('Boissons');
+
