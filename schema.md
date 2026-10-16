@@ -37,3 +37,17 @@
   On a deux options : 
   - Creer un client(1,'de passge') (mon choix) join par defaut select 
   - Rendre en nullable la Foreign key nullable , un left join
+
+
+## Etape 5 :
+- CARTE : **id** , nom , prix ,#idCategorie
+- CATEGORIE : **id** , nom 
+- COMMANDE : **id**, dateCommande , montant,#idClient ,#idServeur ?(modifie)
+- COMMANDEPLAT: **id** , #idCommande , #idPlat , qte
+- Client : **id**, nom 
+- serveur : **id** , nom
+
+
+####  Une table de la salle et une commande sont deux choses différentes : expliquez pourquoi. Pourquoi le nom table pose-t-il problème en SQL ?
+- Il peut y avoir des clients avec leurs propres commandes differntes sur une table et une table ne veux pas dire une table par salle 
+- C'est tres tres problematque de cree une table appellee table (le moteur ne veux pas parceque ca embete son registre de table )
