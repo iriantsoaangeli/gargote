@@ -5,6 +5,8 @@ CREATE Table commande (
     dateCommande DATE NOT NULL
 );
 
+ALTER TABLE commande ADD CONSTRAINT montant_positive CHECK (montant > 0);
+
 --Table de liaison
 CREATE TABLE commandePlat (
     id INT PRIMARY KEy GENERATED ALWAYS AS IDENTITY,
