@@ -8,8 +8,8 @@ ALTER TABLE CARTE ADD COLUMN idCategorie INT;
  );
 
 -- Contrainte sur nom
-ALTER TABLE categorie ADD CONSTRAINT nom_unique UNIQUE (nom);
-ALTER TABLE categorie ADD CONSTRAINT nom_not_null CHECK (nom IS NOT NULL);
+ALTER TABLE categorie ADD CONSTRAINT nom_categorie_unique UNIQUE (nom);
+ALTER TABLE categorie ADD CONSTRAINT nom_categorie_not_null CHECK (nom IS NOT NULL);
 
 -- Donnees de categories
 INSERT INTO categorie (nom) VALUES ('PLats Malagasy');
