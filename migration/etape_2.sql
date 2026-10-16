@@ -29,6 +29,6 @@ UPDATE CARTE SET idCategorie = 4 WHERE id = 6;
 UPDATE CARTE SET idCategorie = 5 WHERE id = 7;
 
 -- Rendre la colonne obligatoire 
-ALTER TABLE CARTE ALTER COLUMN categorie SET NOT NULL;
+ALTER TABLE CARTE ALTER COLUMN idCategorie SET NOT NULL;
 -- Ajouter FK
-ALTER TABLE CARTE ADD CONSTRAINT fk_categorie FOREIGN KEY (categorie) REFERENCES categorie(id);
+ALTER TABLE CARTE ADD CONSTRAINT fk_categorie FOREIGN KEY (idCategorie) REFERENCES categorie(id);
