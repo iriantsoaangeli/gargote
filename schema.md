@@ -15,3 +15,10 @@
 1. Si on a **soupes , soupe , lasopy** dans ces colonnes , pour chercher de la soupe il faudra ecrire : WHERE categorie="soupe" OR categorie="soupes" OR categorie="lasopy" plutot que : WHERE idCategorie = id de la categorie soupe
 2. Ce probleme devien pire si il y a des **fautes de frappes** comme **sop** ou **soup** et que certains plats ne sont pas selectionnables si on ne connait pas chaque orthographe bizarre
 3. Lorsqu'on cree un plat on tape la categorie pluto que de la selctionner 
+
+
+## Etape 3 :
+- CARTE : **id** , nom , prix ,#idCategorie
+- CATEGORIE : **id** , nom 
+- COMMANDE : **id**, dateCommande , montant (nouveau)
+- COMMANDEPLAT: **id** , #idCommande , #idPlat , qte (nouveau)
