@@ -13,7 +13,7 @@ ALTER TABLE commande ALTER COLUMN idServeur SET DEFAULT NULL;
 -- Foreign key serveur
 ALTER TABLE commande ADD CONSTRAINT fk_serveur FOREIGN KEY (idServeur) REFERENCES serveur (id);
 -- Tables de la salle
-CREATE TABLE salle (
+CREATE TABLE tab (
     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     numero INT NOT NULL UNIQUE
 );
@@ -25,7 +25,7 @@ INSERT INTO serveur (nom) VALUES
     ('Lalao Rasoa');
 
 
-INSERT INTO table_salle (numero) VALUES
+INSERT INTO tab(numero) VALUES
     (1),
     (2),
     (3),
