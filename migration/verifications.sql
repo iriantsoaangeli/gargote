@@ -9,3 +9,7 @@ SELECT count(c.id),k.nom as nombre_plat FROM categorie k LEFT JOIN carte c ON c.
 SELECT SUM(
    qte * (SELECT prix FROM carte WHERE id = idPLat)
 ) as total,idCommande FROM commandePlat JOIN  commande on commande.id = commandePlat.idCommande GROUP BY idCommande   
+
+
+-- Etape 4 : Commandes et leurs clients
+SELECT * FROM commande join client on commande.idClient = client.id
