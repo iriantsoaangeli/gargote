@@ -27,4 +27,4 @@ INSERT INTO carte ( nom, prix) VALUES ( 'Soupe chinoise', 5000);
 
 INSERT INTO carte ( nom, prix) VALUES ( 'Mofo Gasy (Les 4)', 1000);
 
-INSERT INTO carte ( nom, prix) VALUES ( "Ranon'ampango", 500);
+INSERT INTO carte ( nom, prix) VALUES ( 'Ranon''ampango', 500);
