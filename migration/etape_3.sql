@@ -12,3 +12,7 @@ CREATE TABLE commandePlat (
     idCommande INT NOT NULL,
     idPlat INT NOT NULL
 );
+
+-- Set les FOREIGN key
+ALTER TABLE commandePlat ADD CONSTRAINT fk_commande FOREIGN KEY (idCommande) REFERENCES commande(id);
+ALTER TABLE commandePlat ADD CONSTRAINT fk_plat FOREIGN KEY (idPlat) REFERENCES carte(id);
