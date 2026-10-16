@@ -3,4 +3,4 @@
  >"Je veux la liste de mes plats et leurs prix"
 
  ## Table(s)
- 
+- CARTE : **id** , nom , prix (nouveau)
