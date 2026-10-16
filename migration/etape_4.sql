@@ -4,3 +4,5 @@ CREATE TABLE client(
     nom VARCHAR(50) NOT NULL
 );
 
+-- Client de passage en id 1
+INSERT INTO client(nom) values('Client de passage')
