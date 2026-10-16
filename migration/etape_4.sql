@@ -6,3 +6,6 @@ CREATE TABLE client(
 
 -- Client de passage en id 1
 INSERT INTO client(nom) values('Client de passage')
+
+-- Ajouter la colonne clien aux commandes 
+ALTER TABLE commande ADD COLUMN idClient INT NOT NULL DEFAULT 1 ;
